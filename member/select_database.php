@@ -1,0 +1,10 @@
+<?php
+@$id=$_GET['user_ID'];
+@$name=$_GET['name'];
+@$username=$_GET['username'];
+@$password=$_GET['password'];
+@$one_password=$_GET['one_password'];
+@$phone=$_GET['phone'];
+@$address=$_GET['address'];
+@$member=$_GET['member'];
+?>

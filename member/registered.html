@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>會員註冊系統</title>
+<body background="images.jpg"></body>
+</head>
+<body>
+<h1><p style="font-size: 40pt" align="center">會員註冊</p></h1><br><br>
+    <form action="register_in.php" name="form1" method="post">
+        <div class="form-group" style="text-align: center;font-size: 20pt">
+            <label for="name1">姓名</label>
+            <input size="20" style="width:25%" type="text" name="name" min="0" max="10" class="custom-select" id="name1" placeholder="請輸入姓名" required onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"><br>
+            <label for="username">帳號</label>
+            <input size="20" style="width:25%" type="text" name="account" class="custom-select" id="username" placeholder="請輸入帳號" required maxlength="10"><br>
+            <label for="password">密碼</label>
+            <input size="20" style="width:25%" type="password" name="pw1" class="custom-select" id="password" placeholder="請輸入密碼" required maxlength="10"><br>
+            <label for="one-password">再輸入密碼</label>
+            <input size="20" style="width:25%" type="password" name="pw2" class="custom-select" id="one-password" placeholder="請再次輸入密碼一次" maxlength="10" required><br>
+            <label for="cellphone">手機</label>
+            <input size="20" style="width:25%" type="text" name="cellphone" class="custom-select" id="cellphone" placeholder="請輸入手機" required maxlength="11"onkeyup="this.value=this.value.replace(/\D/g,'')" ><br>
+            <label for="address">通訊地址</label>
+            <input size="20" style="width:25%" type="text" name="address" class="custom-select" id="address" placeholder="請輸入地址" required maxlength="20" onkeyup="this.value=this.value.replace(/[^a-zA-Z]/g,'')"><br>
+            <label for="member">會員等級</label>
+            <select class="custom-select" name="member" id="member" required style="width: 25%">
+                <option value="zero">請選擇會員</option>
+                　     <option value="VIP">VIP會員</option>
+                　     <option value="common">普通會員</option>
+            </select><br><br>
+            <button name="send" style="font-size: 20pt">註冊</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<button type="button" name="return" style="font-size: 20pt" onclick="location.href='member.php';">返回</button>
+        </div>
+    </form>
+</body>
+</html>

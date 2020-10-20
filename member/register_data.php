@@ -1,0 +1,9 @@
+<?php
+@$name=$_POST["name"];
+@$username=$_POST["account"];
+@$password=$_POST["pw1"];
+@$one_password=$_POST["pw2"];
+@$phone=$_POST["cellphone"];
+@$address=$_POST["address"];
+@$member=$_POST["member"];
+?>
